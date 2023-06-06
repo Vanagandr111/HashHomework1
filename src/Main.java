@@ -29,7 +29,7 @@ public class Main {
     char min = minCharacter(characters);
 
     logger.info("Список букв: " + characters);
-    logger.info("Буква \"" + max + "\" была больше всех в тексте. Она появлялась: " + characters.get(max) + " раз(а)");
+    logger.info("Буква \"" + max + "\" была чаще всех в тексте. Она появлялась: " + characters.get(max) + " раз(а)");
     logger.info("Буква \"" + min + "\" была реже всех в тексте. Она появлялась: " + characters.get(min) + " раз(а)");
   }
 
