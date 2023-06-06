@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.logging.Logger;
 
@@ -8,10 +9,10 @@ public class Main {
   public static final Logger logger = Logger.getAnonymousLogger();
 
   public static void main(String[] args) {
-
     HashMap<Character, Integer> characters = new HashMap<>();
+    String lowercaseLoremIpsum = loremIpsum.toLowerCase(Locale.ENGLISH);
 
-    for(char char1 : loremIpsum.toCharArray()) {
+    for(char char1 : lowercaseLoremIpsum.toCharArray()) {
       if(!Character.isLetter(char1)) {
         continue;
       }
